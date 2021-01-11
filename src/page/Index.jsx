@@ -1,13 +1,13 @@
-import ImageDisplay from "../component/ImageDisplay/ImageDisplay.jsx";
+
 import NavBar from "../component/NavBar/NavBar.jsx";
 import "./Index.css";
 
 const Index = function() {
   return (
     <div id="app">
-      <ImageDisplay>
-        
-      </ImageDisplay>
+      <main>
+
+      </main>
       <aside>
         <NavBar /> 
         <div>osef</div>
