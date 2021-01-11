@@ -5,7 +5,9 @@ import "./Index.css";
 const Index = function() {
   return (
     <div id="app">
-      <ImageDisplay />
+      <ImageDisplay>
+        
+      </ImageDisplay>
       <aside>
         <NavBar /> 
         <div>osef</div>

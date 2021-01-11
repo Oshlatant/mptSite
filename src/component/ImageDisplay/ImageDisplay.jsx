@@ -1,9 +1,9 @@
 import "./ImageDisplay.css";
 
-const ImageDisplay = function() {
+const ImageDisplay = function({children}) {
   return (
     <main className="imagedisplay">
-      IMAGE
+      {children}
     </main>
   );
 }
