@@ -1,0 +1,23 @@
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#app header {
+  width: 100%;
+  min-height: 100px;
+  flex-grow: 0.1;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #bebebe;
+}
+
+#app main {
+  background-color: #ffffff;
+  flex-grow: 4;
+  width: 100%;
+  /* height: 830px; */
+}
+
+
+

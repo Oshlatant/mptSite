@@ -1,15 +1,21 @@
 .navbar {
   list-style-type: none;
-  background-color: #4d98df;
-  
-  align-items: center;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  gap: 10px;
+  justify-content: flex-start;
 }
 
 .navbar li {
-  background-color: red;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+
+  
+  width: 200px;
   
 }
+
+
+
