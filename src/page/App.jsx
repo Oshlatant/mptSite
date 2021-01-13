@@ -6,18 +6,22 @@ const App = function() {
 
   const linkCatalogue = {
     "_logo": "#",
-    "Mr.Patate": "#",
+    "MPatate": "#",
     "Boutique": "#",
     "Blog": "#",
     "Contact": "#",
+  }
+
+  const secondLinkCatalogue = {
+    "Donation": "#",
+    "_shop": "#",
   }
   
   return (
     <div id="app">
       <header>
-        <NavBar className="navbar" slotList={generateAnchor(linkCatalogue)}/>
-        <span>Donation</span>
-        <span>Shop panier ?</span>
+        <NavBar slotList={generateAnchor(linkCatalogue)}/>
+        <NavBar slotList={generateAnchor(secondLinkCatalogue)}/>
       </header>
       <main></main>
     </div>

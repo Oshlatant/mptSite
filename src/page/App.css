@@ -13,8 +13,26 @@ a {
   min-height: 100px;
   flex-grow: 0.1;
   display: flex;
+  /* justify-content: space-between; */
+  background-color: #f1f2f6;
+}
+
+header .navbar:first-child {
   justify-content: flex-start;
-  background-color: #bebebe;
+}
+header .navbar:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .shop {
+  background-image: url("../assets/shopr.png");
+  background-size: cover;
+  padding: 30px;
+}
+
+header .shop:hover {
+  transform: scale(1.1);
 }
 
 
@@ -25,21 +43,32 @@ header .logo {
   padding: 30px;
 }
 
-header .link {
-  border-style: solid;
-  border-radius: 15px;
-  border-color: #303030;
-  /* background-color: seagreen; */
-  width: 100%;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 20px;
-  
+header .logo:hover {
+  transform: scale(1.1);
 }
 
-header .link:hover {
+header .navbar:first-child .link {
+  /* background-color: #f1f1f1; */
+  border-left-style: solid;
+  border-right-style: solid;
+  border-radius: 8px;
+  border-color: #303030;
+  border-width: 2px;
+  width: 90%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.8 rm;
+  transition-duration: 0.5s;
+  /* font-weight:  */
+}
+
+header .navbar:first-child .link:hover {
   background-color: #303030;
   color: #ffffff;
+  border-style: solid;
+  border-radius: 8px;
+  transform: scale(0.8);
+  transition-duration: 0.5s;
 }
 
 
