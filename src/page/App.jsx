@@ -1,21 +1,22 @@
 import NavBar from "../component/NavBar/NavBar.jsx";
+import { generateAnchor } from "../lib/lib.jsx";
 import "./App.css";
 
 const App = function() {
 
-  const linkList = [
-    "MPommedeterre",
-    "Place des ventes...",
-    "MPommedeterre",
-    "MPommedeterre",
-    "MPommedeterre"
-  ];
-    // "","Projets et actualités","Contacts intergalactiques","Blog"];
+  const linkCatalogue = {
+    "_logo": "#",
+    "Mr.Patate": "#",
+    "Boutique": "#",
+    "Blog": "#",
+    "Contact": "#",
+  }
   
   return (
     <div id="app">
       <header>
-        <NavBar slotList={linkList}/>
+        <NavBar className="navbar" slotList={generateAnchor(linkCatalogue)}/>
+        <span>Donation</span>
         <span>Shop panier ?</span>
       </header>
       <main></main>

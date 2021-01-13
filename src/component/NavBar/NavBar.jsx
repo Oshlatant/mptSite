@@ -24,8 +24,3 @@ const NavBar = function({slotList}) {
 }
 
 export default NavBar;
-/* <li><a href="#">MPommedeterre</a></li>
-<li><a href="#">Place des ventes...</a></li>
-<li><a href="#">Projets et actualités</a></li>
-<li><a href="#">Contacts intergalactiques</a></li>
-<li><a href="#">Blog</a></li> */
