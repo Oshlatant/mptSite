@@ -2,7 +2,7 @@
   list-style-type: none;
   width: 100%;
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .navbar li {

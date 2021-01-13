@@ -13,16 +13,26 @@ a {
   min-height: 100px;
   flex-grow: 0.1;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-evenly;
   background-color: #f1f2f6;
+  font-weight: 700;
+}
+
+header .navbar:nth-child(2) {
+  justify-content: flex-end;
+  /* background-color: red; */
+  flex-shrink: 2;
 }
 
 header .navbar:first-child {
   justify-content: flex-start;
+  margin-left: 20px;
+  
 }
 header .navbar:last-child {
-  display: flex;
   justify-content: flex-end;
+  margin-right: 20px;
+  flex-shrink: 2;
 }
 
 header .shop {
@@ -38,7 +48,6 @@ header .shop:hover {
 
 header .logo {
   background-image: url("../assets/patate.png");
-  background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
 }
@@ -47,22 +56,21 @@ header .logo:hover {
   transform: scale(1.1);
 }
 
-header .navbar:first-child .link {
-  /* background-color: #f1f1f1; */
-  border-left-style: solid;
-  border-right-style: solid;
-  border-radius: 8px;
-  border-color: #303030;
-  border-width: 2px;
-  width: 90%;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 1.8 rm;
-  transition-duration: 0.5s;
-  /* font-weight:  */
+header .burger {
+  background-image: url("../assets/burger.png");
+  background-size: cover;
+  padding: 30px;
+  margin-right: 100px;
 }
 
-header .navbar:first-child .link:hover {
+header .navbar:first-child li:last-child {
+  
+  flex-grow: 2;
+  /* margin-right: 30px; */
+  /* background-color: red; */
+}
+
+header .navbar:last-child .link:hover {
   background-color: #303030;
   color: #ffffff;
   border-style: solid;

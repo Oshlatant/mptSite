@@ -4,15 +4,19 @@ import "./App.css";
 
 const App = function() {
 
-  const linkCatalogue = {
+  const navBar1 = {
     "_logo": "#",
-    "MPatate": "#",
-    "Boutique": "#",
+    "_burger": "#",
+    "M Pomme de terre": "#",
+  }
+
+  const navBar2 = {
+    "Place des ventes": "#",
     "Blog": "#",
     "Contact": "#",
   }
 
-  const secondLinkCatalogue = {
+  const navBar3 = {
     "Donation": "#",
     "_shop": "#",
   }
@@ -20,8 +24,9 @@ const App = function() {
   return (
     <div id="app">
       <header>
-        <NavBar slotList={generateAnchor(linkCatalogue)}/>
-        <NavBar slotList={generateAnchor(secondLinkCatalogue)}/>
+        <NavBar slotList={generateAnchor(navBar1)}/>
+        <NavBar slotList={generateAnchor(navBar2)}/>
+        <NavBar slotList={generateAnchor(navBar3)}/>
       </header>
       <main></main>
     </div>
