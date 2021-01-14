@@ -2,7 +2,7 @@
   list-style-type: none;
   width: 100%;
   display: flex;
-  /* gap: 10px; */
+  font-size: 20px;
 }
 
 .navbar li {
@@ -10,8 +10,95 @@
   align-items: center;
   justify-content: center;
   width: 150px;
-  /* background-color: royalblue; */
+  /* background-color: rgb(93, 123, 255); */
 }
+
+
+
+.navbar li:nth-child(3) {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 250px;
+  
+  /* background-color: red; */
+}
+.navbar li:nth-child(4) {
+  min-width: 250px;
+  /* background-color: red; */
+}
+.navbar li:nth-child(7) {
+  margin-left: auto;
+  /* background-color: red; */
+  /* padding: 10px inherit; */
+}
+
+.navbar li:last-child {
+  /* margin: auto; */
+  /* border-style: solid; */
+}
+
+.navbar li:nth-child(3) .link {
+  margin-right: auto;
+  
+}
+.navbar li:nth-child(7) .link {
+  background-color: #313131;
+  color: #e4e4e4;
+  padding: 20px;
+}
+.navbar li:nth-child(7) .link:hover {
+  background-color: #fff388;
+  color: #000000;
+  padding: 20px;
+}
+
+/* .navbar .paypal {
+  background-image: url("../../assets/paypal.png");
+  background-size: cover;
+  padding: 40px;
+} */
+
+
+
+
+.navbar .logo {
+  background-image: url("../../assets/patate.png");
+  background-size: cover;
+  padding: 30px;
+  margin-left: auto;
+}
+
+.navbar .logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar .burger {
+  background-image: url("../../assets/burger.png");
+  background-size: cover;
+  padding: 30px;
+  margin-right: auto;
+}
+
+.navbar .shop {
+  background-image: url("../../assets/shopr.png");
+  background-size: cover;
+  padding: 30px;
+  /* margin-right: auto; */
+}
+
+.navbar .shop:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* header .navbar:last-child .link {
+  margin-left: auto;
+} */
+
+
+
+
 
 
 
