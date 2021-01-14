@@ -1,37 +1,23 @@
 import NavBar from "../component/NavBar/NavBar.jsx";
-import { generateAnchor } from "../lib/lib.jsx";
 import "./App.css";
 
 const App = function() {
 
-  const navBar1 = {
-    "_logo": "#",
-    "_burger": "#",
-    "Meta Pomme de terre": "#",
-    "Place des ventes": "#",
-    "Blog": "#",
-    "Contact": "#",
-    "Donation": "#",
-    "_shop": "#",
+  const catalogue = {
+    "logo": {"type": "image", "balise": "text", "link": null},
+    "burger": {"type": "image", "balise": "button", "link": null},
+    "Meta Pomme de terre": {"type": "text", "balise": "text", "link": "#"},
+    "Place des ventes": {"type": "text", "balise": "text", "link": "#"},
+    "Blog": {"type": "text", "balise": "text", "link": "#"},
+    "Contact": {"type": "text", "balise": "text", "link": "#"},
+    "Donation": {"type": "text", "balise": "text", "link": "#"},
+    "shop": {"type": "image", "balise": "button", "link": null},
   }
-
-  // const navBar2 = {
-  //   "Place des ventes": "#",
-  //   "Blog": "#",
-  //   "Contact": "#",
-  // }
-
-  // const navBar3 = {
-  //   "Donation": "#",
-  //   "_shop": "#",
-  // }
   
   return (
     <div id="app">
       <header>
-        <NavBar slotList={generateAnchor(navBar1)}/>
-        {/* <NavBar slotList={generateAnchor(navBar2)}/>
-        <NavBar slotList={generateAnchor(navBar3)}/> */}
+        <NavBar catalogue={catalogue}/>
       </header>
       <main></main>
     </div>

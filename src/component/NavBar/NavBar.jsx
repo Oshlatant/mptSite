@@ -1,24 +1,37 @@
-import React, { useEffect, useState } from "react";
+
 import "./NavBar.css";
 
-const NavBar = function({slotList}) {
+const NavBar = function({catalogue}) {
 
-  const [slotState, set] = useState([]);
+  const elementList = []
 
-  useEffect(()=>{
-    const slot = slotList.map((element, index) => <li key={index}>{element}</li>);
-    //everything is fine
-    if(`${slotState}` === `${slot}`) {
-      return;
+  for(let key in catalogue) {
+
+    let element;
+    
+    if(catalogue[key].balise === "button") {
+      if(catalogue[key].type === "image") {
+        element = <button className={`navbar-${key}`} onClick={console.log(`${key} a été cliqué`)}></button>;
+      }
+      else{
+        element = <button className="navbar-link" onClick={`${key} a été cliqué`}>{key}</button>;
+      }
     }
-    set([...slotState, ...slot]);
+    else {
+      if(catalogue[key].type === "image") {
+        element = <a className={`navbar-${key}`} href={catalogue[key].link}></a>;
+      }
+      else {
+        element = <a className="navbar-link" href={catalogue[key].link}>{key}</a>;
+      }
+    }
 
-  }, [slotState, slotList]);
+    elementList.push(<li key={key} >{element}</li>);
+  }
 
-  
   return (
     <ul className="navbar">
-      {slotState}
+      {elementList}
     </ul>
   );
 }

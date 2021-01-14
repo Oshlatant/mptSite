@@ -5,6 +5,16 @@
   font-size: 20px;
 }
 
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+
+
 .navbar li {
   display: flex;
   align-items: center;
@@ -14,6 +24,11 @@
 }
 
 
+.navbar li:nth-child(2) {
+  /* width: 50px; */
+  /* background-color: red; */
+  /* flex-shrink: 2; */
+}
 
 .navbar li:nth-child(3) {
   margin-right: auto;
@@ -37,16 +52,27 @@
   /* border-style: solid; */
 }
 
-.navbar li:nth-child(3) .link {
+.navbar li:nth-child(3) .navbar-link {
+  /* margin-right: auto; */
+  
+}
+.navbar li:nth-child(4) .navbar-link {
+  margin-left: auto;
+  
+}
+.navbar li:nth-child(5) .navbar-link {
+  
+}
+.navbar li:nth-child(6) .navbar-link {
   margin-right: auto;
   
 }
-.navbar li:nth-child(7) .link {
+.navbar li:nth-child(7) .navbar-link {
   background-color: #313131;
   color: #e4e4e4;
   padding: 20px;
 }
-.navbar li:nth-child(7) .link:hover {
+.navbar li:nth-child(7) .navbar-link:hover {
   background-color: #fff388;
   color: #000000;
   padding: 20px;
@@ -61,32 +87,32 @@
 
 
 
-.navbar .logo {
+.navbar .navbar-logo {
   background-image: url("../../assets/patate.png");
   background-size: cover;
   padding: 30px;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
-.navbar .logo:hover {
+.navbar .navbar-logo:hover {
   transform: scale(1.1);
 }
 
-.navbar .burger {
+.navbar .navbar-burger {
   background-image: url("../../assets/burger.png");
   background-size: cover;
   padding: 30px;
   margin-right: auto;
 }
 
-.navbar .shop {
+.navbar .navbar-shop {
   background-image: url("../../assets/shopr.png");
   background-size: cover;
   padding: 30px;
   /* margin-right: auto; */
 }
 
-.navbar .shop:hover {
+.navbar .navbar-shop:hover {
   transform: scale(1.1);
 }
 
