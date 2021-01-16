@@ -1,38 +1,44 @@
-
+import { useMediaQuery } from 'react-responsive'
+import { generateElement } from "../../lib/lib.jsx";
 import "./NavBar.css";
 
 const NavBar = function({catalogue}) {
 
-  const elementList = []
 
-  for(let key in catalogue) {
+  const isSmallScreen = useMediaQuery({
+    query: '(max-width: 1023px)'
+  });
+  // const isTinyScreen = useMediaQuery({
+  //   query: '(max-width: 500px)'
+  // });
 
-    let element;
-    
-    if(catalogue[key].balise === "button") {
-      if(catalogue[key].type === "image") {
-        element = <button className={`navbar-${key}`} onClick={console.log(`${key} a été cliqué`)}></button>;
-      }
-      else{
-        element = <button className="navbar-link" onClick={`${key} a été cliqué`}>{key}</button>;
-      }
-    }
-    else {
-      if(catalogue[key].type === "image") {
-        element = <a className={`navbar-${key}`} href={catalogue[key].link}></a>;
-      }
-      else {
-        element = <a className="navbar-link" href={catalogue[key].link}>{key}</a>;
-      }
-    }
+  const fullElementList = generateElement(catalogue.fullCatalogue);
+  const smallElementList = generateElement(catalogue.smallCatalogue);
+  // const tinyElementList = generateElement(catalogue.tinyCatalogue);
+  
 
-    elementList.push(<li key={key} >{element}</li>);
+  if(isSmallScreen) {
+    return (
+      <header className="small-navbar">
+        <ul className="navbar-ul">
+          {smallElementList}
+        </ul>
+      </header>
+    );
   }
-
+  // else if(isTinyScreen) {
+  //   return (
+  //     <ul className="tiny-navbar">
+  //       {tinyElementList}
+  //     </ul>
+  //   );
+  // }
   return (
-    <ul className="navbar">
-      {elementList}
-    </ul>
+    <header className="navbar">
+      <ul className="navbar-ul">
+        {fullElementList}
+      </ul>
+    </header>
   );
 }
 
