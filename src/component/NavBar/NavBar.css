@@ -1,6 +1,5 @@
-.navbar ul,
-.small-navbar ul,
-.tiny-navbar ul {
+.navbar ,
+.small-navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
@@ -24,6 +23,12 @@ header li {
   padding: 0 10px;
   /* flex: 0.5 1 0; */
 }
+
+/* 
+header ul {
+  display: flex;
+  flex-direction: row;
+} */
 
 
 /* Full navbar css only */
@@ -87,7 +92,7 @@ header li {
 }
 
 
-.small-navbar .navbar-ul {
+.small-navbar {
   justify-content: space-between;
   
 }

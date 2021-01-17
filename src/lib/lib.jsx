@@ -1,18 +1,18 @@
 
 
-const generateElement = (catalogue) => {
+const generateElement = (catalogue, callbackList) => {
   const elementList = []
 
   for(let key in catalogue) {
-
+    let i = 0;
     let element; 
     
     if(catalogue[key].balise === "button") {
       if(catalogue[key].type === "image") {
-        element = <button className={`navbar-${key}`} onClick={console.log(`${key} a été cliqué`)}></button>;
+        element = <button className={`navbar-${key}`} onClick={callbackList[i]}></button>;
       }
       else{
-        element = <button className="navbar-link" onClick={`${key} a été cliqué`}>{key}</button>;
+        element = <button className="navbar-link" onClick={callbackList[i]}>{key}</button>;
       }
     }
     else {
@@ -24,6 +24,7 @@ const generateElement = (catalogue) => {
       }
     }
 
+    i++;
     elementList.push(<li key={key} >{element}</li>);
   }
 

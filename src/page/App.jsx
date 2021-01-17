@@ -1,29 +1,33 @@
+import { useState } from "react";
+import { useMediaQuery } from 'react-responsive'
 import NavBar from "../component/NavBar/NavBar.jsx";
 import "./App.css";
 
 const App = function() {
 
+  const titleList = [
+    "Meta Pomme de Terre",
+    "Place des ventes",
+    "Blog",
+    "Contact",
+    "Donation"
+  ]
 
-  const catalogue = {
-    fullCatalogue: {
-      "logo": {"type": "image", "balise": "text", "link": null},
-      "Meta Pomme de terre": {"type": "text", "balise": "text", "link": "#"},
-      "Place des ventes": {"type": "text", "balise": "text", "link": "#"},
-      "Blog": {"type": "text", "balise": "text", "link": "#"},
-      "Contact": {"type": "text", "balise": "text", "link": "#"},
-      "Donation": {"type": "text", "balise": "text", "link": "#"},
-      "shop": {"type": "image", "balise": "button", "link": null},
-    },
-    smallCatalogue: {
-      "burger": {"type": "image", "balise": "button", "link": null},
-      "Meta Pomme de terre": {"type": "text", "balise": "text", "link": "#"},
-      "shop": {"type": "image", "balise": "button", "link": null},
-    }
+  const [isBurgerClick, setBurgerState] = useState(false);
+  const isSmallScreen = useMediaQuery({
+    query: '(max-width: 1023px)'
+  });
+
+  const handleBurger = function(e) {
+    setBurgerState(!isBurgerClick);
   }
-  
+
+  console.log(isBurgerClick);
+
+
   return (
     <div id="app">
-      <NavBar catalogue={catalogue}/>
+      <NavBar titleList={titleList} isSmallScreen={isSmallScreen} handleBurger={handleBurger}/>
     </div>
   );
 }

@@ -1,43 +1,31 @@
-import { useMediaQuery } from 'react-responsive'
-import { generateElement } from "../../lib/lib.jsx";
+
 import "./NavBar.css";
 
-const NavBar = function({catalogue}) {
+const NavBar = function({titleList, isSmallScreen, handleBurger}) {
 
 
-  const isSmallScreen = useMediaQuery({
-    query: '(max-width: 1023px)'
-  });
-  // const isTinyScreen = useMediaQuery({
-  //   query: '(max-width: 500px)'
-  // });
-
-  const fullElementList = generateElement(catalogue.fullCatalogue);
-  const smallElementList = generateElement(catalogue.smallCatalogue);
-  // const tinyElementList = generateElement(catalogue.tinyCatalogue);
+  const largeNavBar = (
+    <ul className="navbar">
+      <li><a className={"navbar-logo"} href="#"></a></li>
+      <li><a className={"navbar-link"} href="#">{titleList[0]}</a></li>
+      <li><a className={"navbar-link"} href="#">{titleList[1]}</a></li>
+      <li><a className={"navbar-link"} href="#">{titleList[2]}</a></li>
+      <li><a className={"navbar-link"} href="#">{titleList[3]}</a></li>
+      <li><a className={"navbar-link"} href="#">{titleList[4]}</a></li>
+      <li><button className={"navbar-shop"} ></button></li>
+    </ul>
+  );
+  const smallNavbar = (
+    <ul className="small-navbar">
+      <li><button className={"navbar-burger"} onClick={handleBurger}></button></li>
+      <li><a className={"navbar-link"} href="#">{titleList[0]}</a></li>
+      <li><button className={"navbar-shop"} ></button></li>
+    </ul>
+  )
   
-
-  if(isSmallScreen) {
-    return (
-      <header className="small-navbar">
-        <ul className="navbar-ul">
-          {smallElementList}
-        </ul>
-      </header>
-    );
-  }
-  // else if(isTinyScreen) {
-  //   return (
-  //     <ul className="tiny-navbar">
-  //       {tinyElementList}
-  //     </ul>
-  //   );
-  // }
   return (
-    <header className="navbar">
-      <ul className="navbar-ul">
-        {fullElementList}
-      </ul>
+    <header>
+      {isSmallScreen ? smallNavbar : largeNavBar}
     </header>
   );
 }
