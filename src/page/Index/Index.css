@@ -1,0 +1,13 @@
+.index {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100%;
+}
+
+.index article {
+  height: 320px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}

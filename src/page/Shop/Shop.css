@@ -1,0 +1,22 @@
+
+
+
+.shop-article-list {
+  padding: 40px 10px;
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.shop-article-list li {
+  flex-basis: 400px;
+  flex-shrink: 1;
+  /* background-color: rgb(155, 155, 155); */
+  height: 400px;
+  border-style: solid;
+  border-width: 1px;
+}
+
