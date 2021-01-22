@@ -1,3 +1,4 @@
+import Article from "../../component/Article/Article";
 import "./Shop.css";
 
 const Shop = function() {
@@ -7,15 +8,12 @@ const Shop = function() {
   return (
     <main>
       <ul className="shop-article-list">
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
-        <li><article>1</article></li>
+        <li><Article/></li>
+        <li><Article/></li>
+        <li><Article/></li>
+        <li><Article/></li>
+        <li><Article/></li> 
+        
         
       </ul>
     </main>

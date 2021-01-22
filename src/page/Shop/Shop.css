@@ -12,11 +12,12 @@
 }
 
 .shop-article-list li {
-  flex-basis: 400px;
+  flex-basis: 250px;
   flex-shrink: 1;
   /* background-color: rgb(155, 155, 155); */
-  height: 400px;
+  height: 250px;
   border-style: solid;
   border-width: 1px;
+  border-radius: 25px 25px 0 0;
 }
 

@@ -33,7 +33,7 @@ header * {
 }
 
 #app main {
-  background-color: #ffffff;
+  background-color: #c5cfcf;
   flex-grow: 2;
   width: 100%;
   /* margin-top: auto;
