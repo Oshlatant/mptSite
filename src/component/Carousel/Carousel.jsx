@@ -22,9 +22,9 @@ const Carousel = () => {
   return (
     <div className="carousel">
       <div className="carousel-image" style={style}>
-        <button onClick={()=>swapImage(-1)}>{"<"}</button>
+        <button onClick={()=>swapImage(-1)}><span>{"❰"}</span></button>
 
-        <button onClick={()=>swapImage(1)}>{">"}</button>
+        <button onClick={()=>swapImage(1)}><span>{"❱"}</span></button>
       </div>
     </div>
   )
