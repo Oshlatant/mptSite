@@ -1,0 +1,15 @@
+.carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  height: 240px;
+  width: 240px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

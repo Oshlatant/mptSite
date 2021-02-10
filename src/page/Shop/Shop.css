@@ -1,5 +1,14 @@
 
+.shop {
+  display: flex;
+  flex-direction: column;
+}
 
+
+.shop header {
+  /* flex-grow: 1; */
+  flex: 1 1 720px;
+}
 
 .shop-article-list {
   padding: 10px;
@@ -8,7 +17,7 @@
   list-style-type: none;
   gap: 20px;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
 
 }
 

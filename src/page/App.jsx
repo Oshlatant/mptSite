@@ -19,13 +19,18 @@ const App = function() {
   
   const toggleBurger = () => {
     const burgerMenu = document.querySelector(".burger-menu");
-    console.log(burgerMenu);
-    burgerMenu.classList.toggle("mask");
+    
+    burgerMenu.classList.toggle("show");
   };
 
+  const maskBurger = () => {
+    const burgerMenu = document.querySelector(".burger-menu");
+    burgerMenu.classList.remove("show");
+  }
+
   const handlePage = function(page) {
+    maskBurger();
     setLastPage(page);
-    toggleBurger();
     setIndex(page === "index");
     setShop(page === "shop");
     setBlog(page === "blog");

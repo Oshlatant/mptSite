@@ -12,14 +12,14 @@
   /* position: relative; */
 }
 
-.navbar ul {
+.navbar > ul {
   list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.navbar li {
+.navbar > ul li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,11 +29,11 @@
 
 
 
-.navbar li:first-child {
+.navbar > ul li:first-child {
   padding-left: 10px;
 }
 
-.navbar li:last-child {
+.navbar > ul li:last-child {
   padding-right: 10px;
 }
 

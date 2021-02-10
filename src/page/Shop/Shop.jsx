@@ -1,4 +1,5 @@
 import Article from "../../component/Article/Article";
+import Carousel from "../../component/Carousel/Carousel";
 import "./Shop.css";
 
 const Shop = function() {
@@ -6,9 +7,10 @@ const Shop = function() {
   const testArray = new Array(50).fill(null);
 
   return (
-    <section>
+    <section className="shop">
       <header>
-        CAROUSSEL
+        <Carousel/>
+      
       </header>
       <ul className="shop-article-list">
         {testArray.map((e, i)=>(
