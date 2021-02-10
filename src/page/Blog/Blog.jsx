@@ -1,9 +1,9 @@
 const Blog = function({titleList, callbackList}) {
 
   return (
-    <main>
+    <div>
       PAGE BLOG
-    </main>
+    </div>
   );
 }
 

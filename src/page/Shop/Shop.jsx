@@ -6,17 +6,23 @@ const Shop = function() {
   
 
   return (
-    <main>
-      <ul className="shop-article-list">
-        <li><Article/></li>
-        <li><Article/></li>
-        <li><Article/></li>
-        <li><Article/></li>
-        <li><Article/></li> 
-        
-        
-      </ul>
-    </main>
+    <ul className="shop-article-list">
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li> 
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li> 
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li>
+      <li><Article/></li> 
+    </ul>
   );
 }
 

@@ -1,11 +1,18 @@
 import "./BurgerMenu.css";
 
-const BurgerMenu = function({titleList, handlePage}) {
+const BurgerMenu = function({handlePage}) {
 
-  console.log(titleList);
+  
+  const titleList = [
+    "Meta Pomme de Terre",
+    "Place des ventes",
+    "Blog",
+    "Contact",
+    "Donation"
+  ];
 
   return (
-    <main>
+    <aside>
       <ul className="burger-menu">
         <li><button className="burger-link" onClick={()=>handlePage("index")}>{titleList[0]}</button></li>
         <li><button className="burger-link" onClick={()=>handlePage("shop")}>{titleList[1]}</button></li>
@@ -13,7 +20,7 @@ const BurgerMenu = function({titleList, handlePage}) {
         <li><button className="burger-link" onClick={()=>handlePage("index")}>{titleList[3]}</button></li>
         <li><button className="burger-link" onClick={()=>handlePage("index")}>{titleList[4]}</button></li>
       </ul>
-    </main>
+    </aside>
   );
 }
 

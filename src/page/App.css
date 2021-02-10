@@ -8,6 +8,10 @@ a {
   color: inherit;
 }
 
+main {
+  position: relative;
+  
+}
 
 button {
   padding: 0;
@@ -26,6 +30,15 @@ button {
   justify-content: space-evenly;
   background-color: #f1f2f6;
   font-weight: 700;
+  
+}
+
+@media (min-height: 101vh) {
+  header {
+    position: absolute;
+    position: fixed;
+    z-index: 1;  
+  }
 }
 
 header * {
@@ -33,7 +46,7 @@ header * {
 }
 
 #app main {
-  background-color: #c5cfcf;
+  background-color: #ffffff;
   flex-grow: 2;
   width: 100%;
   /* margin-top: auto;

@@ -20,11 +20,11 @@ const Index = function() {
   
 
   return (
-    <main className="index">
-      <article>
-        <div dangerouslySetInnerHTML={innerHtml(content)}></div>
-      </article>
-    </main>
+    <article className="index">
+      
+      <div dangerouslySetInnerHTML={innerHtml(content)}></div>
+      
+    </article>
   );
 }
 

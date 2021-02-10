@@ -17,21 +17,19 @@ const App = function() {
     "Donation"
   ]
 
-  const isSmallScreen = useMediaQuery({
-    query: '(max-width: 1023px)'
-  });
-
   const [lastPage, setLastPage] = useState("");
-  const [isBurgerMenu, setBurger] = useState(false);
+  const [isBurger, setBurger] = useState(false);
   const [isIndex, setIndex] = useState(true);
   const [isShop, setShop] = useState(false);
   const [isBlog, setBlog] = useState(false);
   const [isContact, setContact] = useState(false);
   const [isDonate, setDonate] = useState(false);
+  
+  const handleBurger = () => setBurger(!isBurger);
 
   const handlePage = function(page) {
     setLastPage(page);
-    setBurger(page === "burger");
+    handleBurger();
     setIndex(page === "index");
     setShop(page === "shop");
     setBlog(page === "blog");
@@ -39,13 +37,19 @@ const App = function() {
     setDonate(page === "donate");
   }
 
+
   return (
     <div id="app">
-      <NavBar titleList={titleList} isSmallScreen={isSmallScreen} handlePage={handlePage}/>
-      {isBurgerMenu && <BurgerMenu titleList={titleList} handlePage={handlePage}/>}
-      {isIndex && <Index/>}
-      {isShop && <Shop/>}
-      {isBlog && <Blog/>}
+      <NavBar handleBurger={handleBurger} title="Meta Pomme de Terre" handlePage={handlePage}/>
+      <main>
+        {isIndex && <Index/>}
+        {isShop && <Shop/>}
+        {isBlog && <Blog/>}
+        {isContact && <Shop/>}
+        {isDonate && <Shop/>}
+        {isBurger && <BurgerMenu className="burger-menu" handlePage={handlePage}/>}
+      </main>
+
     </div>
   );
 }

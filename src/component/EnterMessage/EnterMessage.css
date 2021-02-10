@@ -1,0 +1,8 @@
+.entermessage {
+  display: flex;
+}
+
+.entermessage-text {
+  flex-grow: 2;
+}
+

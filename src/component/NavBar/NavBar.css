@@ -1,74 +1,37 @@
-.navbar ,
-.small-navbar {
+.navbar {
   list-style-type: none;
   width: 100%;
   display: flex;
   font-size: 20px;
+  
+  justify-content: space-between;
+  
 }
-
 
 header li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
+  
   /* flex: 0.5 1 0; */
 }
 
-/* 
-header ul {
-  display: flex;
-  flex-direction: row;
-} */
-
-
-/* Full navbar css only */
 
 
 .navbar li:first-child {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .navbar li:last-child {
-  padding-right: 30px;
-}
-
-.navbar li:nth-child(2) {
-  margin-right: auto;
-  margin-left: auto;
-  /* flex-grow: 2; */
-  /* min-width: 250px; */
-}
-
-.navbar li:nth-child(6) {
-  margin-left: auto;
-}
-
-.navbar li:nth-child(6) .navbar-link {
-  background-color: #313131;
-  color: #e4e4e4;
-  padding: 20px;
-}
-.navbar li:nth-child(6) .navbar-link:hover {
-  background-color: #fff388;
-  color: #000000;
-  padding: 20px;
-  
+  padding-right: 10px;
 }
 
 .navbar-link:hover,
-.navbar-logo:hover,
 .navbar-burger:hover,
 .navbar-shop:hover {
   transform: scale(1.1);
 }
 
-.navbar-logo {
-  background-image: url("../../assets/logo.svg");
-  background-size: cover;
-  padding: 30px;
-  
-}
 
 .navbar-burger {
   background-image: url("../../assets/burger.png");
@@ -82,28 +45,11 @@ header ul {
   padding: 30px;
 }
 
-
-.small-navbar {
-  justify-content: space-between;
-  
-}
-
-.small-navbar li:first-child {
-  padding-right: 0;
-}
-.small-navbar li:nth-child(2) {
-  padding: 0;
-}
-
-.small-navbar li:last-child {
-  padding-left: 0;
-}
-
 @media (max-width: 425px) {
   .navbar-burger, .navbar-shop {
     padding: 20px;
   }
-  .small-navbar li:nth-child(2) {
+  .navbar li:nth-child(2) {
     font-size: 16px;
   }
 }
