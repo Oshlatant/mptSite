@@ -4,7 +4,7 @@ import "./Article.css";
 const Article = function({id}) {
 
   //useEffect apifetch
-  const backgroundImage = `https://via.placeholder.com/250`;
+  const backgroundImage = `https://via.placeholder.com/140`;
   // console.log(background);
   const style = {
     backgroundImage: `url(${backgroundImage})`

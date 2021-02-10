@@ -1,14 +1,25 @@
 .navbar {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #f1f2f6;
+  /* font-weight: 700; */
+  position: fixed;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
+}
+
+.navbar ul {
   list-style-type: none;
   width: 100%;
   display: flex;
-  font-size: 20px;
-  
   justify-content: space-between;
-  
 }
 
-header li {
+.navbar li {
   display: flex;
   align-items: center;
   justify-content: center;
