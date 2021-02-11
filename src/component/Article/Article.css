@@ -1,5 +1,5 @@
 
-.article {
+article {
   background-color: #ffffff;
   height: 100%;
   position: relative;
@@ -9,7 +9,7 @@
   /* 250*250 px  */
 }
 
-.article-info {
+.article-name {
   position: absolute;
   
   bottom: 0;

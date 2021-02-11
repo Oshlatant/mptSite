@@ -1,0 +1,23 @@
+.article-displayer {
+  padding: 10px;
+  height: 100%;
+  display: grid;
+  list-style-type: none;
+  gap: 15px;
+  grid-template-columns: repeat(2, auto);
+  
+}
+
+.article-displayer li {
+  width: 140px;
+  height: 140px;
+  
+  /* background-color: rgb(155, 155, 155); */
+  
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+
+

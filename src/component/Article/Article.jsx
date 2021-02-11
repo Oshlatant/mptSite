@@ -1,19 +1,20 @@
 import "./Article.css";
-// import background from '../../assets/wailord.jpg';
 
-const Article = function({id}) {
+const Article = function({articleData}) {
 
-  //useEffect apifetch
-  const backgroundImage = `https://via.placeholder.com/140`;
+  
+  const backgroundImage = `url(${articleData.imgURL})`
+
+  console.log(backgroundImage);
   // console.log(background);
   const style = {
-    backgroundImage: `url(${backgroundImage})`
+    backgroundImage: backgroundImage,
     // backgroundColor: "red",
   }
 
   return (
-      <article className="article" style={style}>
-        <div className="article-info">TEXT</div>
+      <article style={style}>
+        <div className="article-name">NAME</div>
       </article>
   )
 }
