@@ -2,7 +2,8 @@
 .burger-menu {
   display: none;
   bottom: 0;
-  height: calc(100% - 80px);
+  top: 60px;
+  height: calc(100% - 60px);
   width: 25%;
   border-right-style: solid;
   position: fixed;

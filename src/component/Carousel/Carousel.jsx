@@ -3,7 +3,6 @@ import "./Carousel.css"
 
 
 const Carousel = () => {
-
   const [targetIMG, setTargetIMG] = useState(0);
   const [imageList, setImageList] = useState(["https://via.placeholder.com/320x180", "https://i.imgur.com/xq3Gvdh.jpg", "https://i.imgur.com/zn44Arr.jpeg", "https://i.imgur.com/d2KSrH1.jpg"]);
   
@@ -23,7 +22,6 @@ const Carousel = () => {
     <div className="carousel">
       <div className="carousel-image" style={style}>
         <button onClick={()=>swapImage(-1)}><span>{"❰"}</span></button>
-
         <button onClick={()=>swapImage(1)}><span>{"❱"}</span></button>
       </div>
     </div>
