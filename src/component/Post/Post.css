@@ -1,0 +1,36 @@
+.post {
+  /* height: 100%; */
+  /* max-width: 680px; */
+  min-width: 325px;
+  word-break: break-word;
+  font-size: 21px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  
+}
+
+.post h1 {
+  font-weight: 400;
+  /* margin-bottom: 30px; */
+}
+
+.post p {
+  /* margin-bottom: 10px; */
+  max-width: 800px;
+  min-width: 300px;
+}
+.post p:last-child {
+  /* margin-bottom: auto; */
+}
+
+
+/* formatting */
+
+.post-text-centered {
+  margin: 0 auto;
+}
+
+.post-text-left {
+
+}

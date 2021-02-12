@@ -1,30 +1,35 @@
 import { useEffect, useState } from "react";
-import { innerHtml } from "../../lib/lib";
+import Post from "../../component/Post/Post.jsx";
+import ArticleDisplayer from "../../component/ArticleDisplayer/ArticleDisplayer.jsx";
 import "./Index.css";
 
 const Index = function() {
 
-  const [content, setContent] = useState("");
+  const postDataList = [{
+    mdContent: `Lorem ipsum<br/><br/> dolor sit amet consectetur adipisicing elit. Iure ab ex dolore voluptatum qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab ex dolore voluptatum 
+    qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus? Lorem ipsum dolor sit amet 
+    consectetur adipisicing elit. Iure ab ex dolore voluptatum qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus?`,
+    
+  }];
+
+
+
 
   useEffect(()=> {
 
     //fetch api
-
-    setContent(
-    `Lorem ipsum dolor <strong>lol</strong>sit amet consectetur adipisicing elit.
-    Iure ab ex dolore voluptatum qui, eius laborum deserunt fugiat porro voluptatem libero similique quam.
-    Suscipit eum pariatur expedita, iste autem ducimus?`
-    )
   }, []);
 
-  
 
   return (
-    <article className="index">
+    <section className="index">
       
-      <div dangerouslySetInnerHTML={innerHtml(content)}></div>
+      <Post postData={postDataList[0]}/>
+      <section>
+        <ArticleDisplayer/>
+      </section>
       
-    </article>
+    </section>
   );
 }
 

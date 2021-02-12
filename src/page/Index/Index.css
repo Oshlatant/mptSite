@@ -1,13 +1,28 @@
 .index {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  
   /* align-items: center; */
   height: 100%;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(2, auto);;
+  grid-template-rows: repeat(2, auto);
 }
 
-.index article {
-  height: 320px;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
+
+
+.index .post {
+  padding: 20px;
+  flex: 1 1 320px;
+}
+
+
+.index > section {
+  flex-grow: 1;
+  
+}
+
+@media (max-width: 425px) {
+  .index {
+    grid-template-columns: 100%;
+  }
 }
