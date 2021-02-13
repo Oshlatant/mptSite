@@ -1,18 +1,17 @@
 .index {
-  display: grid;
+  display: flex;
   
   /* align-items: center; */
   height: 100%;
-  /* flex-wrap: wrap; */
-  grid-template-columns: repeat(2, auto);;
-  grid-template-rows: repeat(2, auto);
+  flex-wrap: wrap;
+  
 }
 
 
 
 .index .post {
   padding: 20px;
-  flex: 1 1 320px;
+  
 }
 
 

@@ -13,8 +13,8 @@ const Article = function({articleData}) {
   }
 
   return (
-      <article style={style}>
-        <div className="article-name">NAME</div>
+      <article className="shop-article" style={style}>
+        <div className="shop-article-name">NAME</div>
       </article>
   )
 }
