@@ -1,6 +1,6 @@
 
 import PostCard from '../../component/PostCard/PostCard'
-
+import "./Blog.css";
 
 const Blog = () => {
 
@@ -18,7 +18,6 @@ const Blog = () => {
         <li><PostCard postData={postData}/></li>
         <li><PostCard postData={postData}/></li>
         <li><PostCard postData={postData}/></li>
-        
       </ul>
     </section>
   )

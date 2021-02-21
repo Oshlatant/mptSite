@@ -1,4 +1,4 @@
-
+import "./PostCard.css";
 
 const PostCard = ({postData}) => {
   const style = {

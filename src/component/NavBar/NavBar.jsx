@@ -1,16 +1,32 @@
-
+import { Link } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import "./NavBar.css";
 
-const NavBar = ({handleBurger, title, handlePage}) => (
-  <nav className="navbar">
-    <BurgerMenu handlePage={handlePage}/>
-    <ul>
-      <li><button className={"navbar-burger"} onClick={()=>handleBurger()}></button></li>
-      <li><button className={"navbar-link"} onClick={()=>handlePage("index")}>{title}</button></li>
-      <li><button className={"navbar-shop"} onClick={()=>handlePage("shop")} ></button></li>
-    </ul>
-  </nav>
-);
+const NavBar = ({title}) => {
+  
+  const toggleBurger = () => {
+    const burgerMenu = document.querySelector(".burger-menu");
+    
+    burgerMenu.classList.toggle("show");
+  };
+
+  const maskBurger = () => {
+    const burgerMenu = document.querySelector(".burger-menu");
+    burgerMenu.classList.remove("show");
+  }
+
+
+  return (
+    <nav className="navbar">
+      <BurgerMenu onClick={maskBurger}/>
+      <ul>
+        <li><button className={"navbar-burger"} onClick={toggleBurger}></button></li>
+        <li><Link className={"navbar-link"} onClick={maskBurger} to="/">{title}</Link></li>
+        <li><button className={"navbar-shop"} ></button></li>
+      </ul>
+    </nav>
+  );
+  
+};
 
 export default NavBar;

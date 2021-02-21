@@ -14,7 +14,6 @@
 .burger-menu.show {
   display: unset;
   /* transform: scale(1.1); */
-  transition: 2s ease-in-out;
 }
 
 .burger-menu ul {
@@ -36,7 +35,7 @@
   
 }
 
-.burger-menu button {
+.burger-menu a {
   border-width: 1px;
   box-shadow: 10px;
   background-color: #f8f9faa6;
@@ -46,7 +45,7 @@
   justify-content: center;
 }
 
-.burger-menu button:hover {
+.burger-menu a:hover {
   /* background-color: #2e2e2e; */
   /* color: #a0e4ff; */
   background-color: #ffffffe7;
@@ -57,7 +56,7 @@
     width: 100%;
   }
 
-  .burger-menu button {
+  .burger-menu a {
     justify-content: center;
   }
 }

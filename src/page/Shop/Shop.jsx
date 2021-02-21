@@ -5,7 +5,7 @@ import "./Shop.css";
 const Shop = function() {
 
   
-
+  console.log("render");
   return (
     <section className="shop">
       <header>
