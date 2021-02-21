@@ -6,7 +6,7 @@ const Post = ({postData}) => {
 
   const converter = new showdown.Converter();
 
-  const htmlContent = converter.makeHtml(postData.mdContent);
+  const htmlContent = converter.makeHtml(postData.content);
 
   return (
     <article className="post" dangerouslySetInnerHTML={innerHtml(htmlContent)}/>

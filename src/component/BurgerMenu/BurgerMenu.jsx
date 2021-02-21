@@ -15,11 +15,11 @@ const BurgerMenu = function({className, handlePage}) {
       <ul>
         <li><button onClick={()=>handlePage("shop")}>{titleList[0]}</button></li>
         <hr></hr>
-        <li><button onClick={()=>handlePage("index")}>{titleList[1]}</button></li>
+        <li><button onClick={()=>handlePage("blog")}>{titleList[1]}</button></li>
         <hr></hr>
-        <li><button onClick={()=>handlePage("index")}>{titleList[2]}</button></li>
+        <li><button onClick={()=>handlePage("contact")}>{titleList[2]}</button></li>
         <hr></hr>
-        <li><button onClick={()=>handlePage("index")}>{titleList[3]}</button></li>
+        <li><button onClick={()=>handlePage("donate")}>{titleList[3]}</button></li>
       </ul>
     </nav>
   );

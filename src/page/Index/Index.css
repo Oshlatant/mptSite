@@ -3,7 +3,8 @@
   
   /* align-items: center; */
   height: 100%;
-  flex-wrap: wrap;
+  
+
   
 }
 
@@ -18,10 +19,4 @@
 .index > section {
   flex-grow: 1;
   
-}
-
-@media (max-width: 425px) {
-  .index {
-    grid-template-columns: 100%;
-  }
 }

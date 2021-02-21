@@ -6,9 +6,10 @@ import "./Index.css";
 const Index = function() {
 
   const postDataList = [{
-    mdContent: `Lorem ipsum<br/><br/> dolor sit amet consectetur adipisicing elit. Iure ab ex dolore voluptatum qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab ex dolore voluptatum 
-    qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus? Lorem ipsum dolor sit amet 
-    consectetur adipisicing elit. Iure ab ex dolore voluptatum qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus?`,
+    content: `Lorem ipsum \n
+dolor sit amet consectetur adipisicing elit. Iure ab ex dolore voluptatum qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab ex dolore voluptatum 
+qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus? Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. Iure ab ex dolore voluptatum qui, eius laborum deserunt **fugiat** porro voluptatem libero similique quam. Suscipit eum pariatur expedita, iste autem ducimus?`,
     
   }];
 
@@ -25,9 +26,6 @@ const Index = function() {
     <section className="index">
       
       <Post postData={postDataList[0]}/>
-      <section>
-        <ArticleDisplayer/>
-      </section>
       
     </section>
   );

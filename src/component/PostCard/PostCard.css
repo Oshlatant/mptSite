@@ -1,0 +1,9 @@
+.postcard {
+  width: 300px;
+  height: 600px;
+  position: relative;
+}
+
+.postcard-title {
+  position: absolute;
+}
