@@ -12,26 +12,6 @@ import {
 } from "react-router-dom";
 
 const App = function() {
-
-  const [lastPage, setLastPage] = useState("");
-  // const [burgerState, setBurger] = useState(false);
-  const [isIndex, setIndex] = useState(true);
-  const [isShop, setShop] = useState(false);
-  const [isBlog, setBlog] = useState(false);
-  const [isContact, setContact] = useState(false);
-  const [isDonate, setDonate] = useState(false);
-  
-  const toggleBurger = () => {
-    const burgerMenu = document.querySelector(".burger-menu");
-    
-    burgerMenu.classList.toggle("show");
-  };
-
-  const maskBurger = () => {
-    const burgerMenu = document.querySelector(".burger-menu");
-    burgerMenu.classList.remove("show");
-  }
-
   return (
     <Router>
       <div id="app">
@@ -54,9 +34,7 @@ const App = function() {
             </Route>
           </Switch>
         </main>
-        <NavBar handleBurger={toggleBurger} title="Meta Pomme de Terre"/>
-        
-
+        <NavBar title="Meta Pomme de Terre"/>
       </div>
     </Router>
   );
