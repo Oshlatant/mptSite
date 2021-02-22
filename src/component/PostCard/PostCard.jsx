@@ -1,15 +1,25 @@
+import { useEffect } from "react";
 import "./PostCard.css";
+import fitty from "fitty";
+
 
 const PostCard = ({postData}) => {
+
+  console.log(postData);
+  const backgroundImage = `url(${postData.miniature})`
+
   const style = {
-    backgroundImage: postData.miniature,
+    backgroundImage: backgroundImage,
   }
+
+ 
+
 
   return (
     <div className="postcard" style={style}>
-      <div>
+      <div className="postcard-data">
         <div className="postcard-title">{postData.title}</div>
-        <span className="postcard-date">XX/XX/XXXX</span>
+        <span className="postcard-date">{postData.date}</span>
       </div>
     </div>
   )

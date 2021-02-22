@@ -1,10 +1,37 @@
 .postcard {
   width: 300px;
-  height: 600px;
-  position: relative;
-  background-color: blue;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* background-color: blue; */
+  border-radius: 15px;
+}
+
+.postcard-data {
+  background-color: #ffffff;
+  
+  height: 100px;
+  padding: 10px 20px;
+  margin: 15px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .postcard-title {
-  position: absolute;
+  flex-grow: 1;
+  display: flex;
+  /* align-items: center; */
+  font-size: 20px;
+}
+
+.postcard-date {
+  /* flex-grow: 1; */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 13px;
+  /* padding: 5px; */
 }

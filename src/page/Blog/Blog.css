@@ -1,7 +1,18 @@
 .blog {
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .blog ul {
+  padding: 20px;
   display: flex;
+  gap: 10px;
   list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog li {
+  /* background-color: blue; */
 }
