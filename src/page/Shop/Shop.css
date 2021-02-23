@@ -10,9 +10,30 @@
   /* flex-grow: 1; */
   height: 230px;
   background-color: #3b3b3b;
-
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* 
+.shop section {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+@media (min-width: 1024px) {
+  .shop section {
+    display: grid;
+    
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  .shop section .article-displayer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+
+
 

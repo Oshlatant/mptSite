@@ -15,6 +15,7 @@ const BurgerMenu = function({className, onClick}) {
   return (
     <nav className={className ? `burger-menu ${className}` : "burger-menu"} onClick={onClick}>
       <ul>
+        <hr></hr>
         <li><Link to="/shop">{titleList[0]}</Link></li>
         <hr></hr>
         <li><Link to="/blog">{titleList[1]}</Link></li>

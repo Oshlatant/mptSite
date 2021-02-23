@@ -18,18 +18,20 @@ button {
 }
 
 main {
-  background-color: #ffffff;
+  
   flex-grow: 2;
   width: 100%;
   /* margin-top: auto;
   margin-bottom: auto; */
-  font-family: Arial, Helvetica, sans-serif;
+  
   display: flex;
   flex-direction: column;
   
-
+  overflow-y: auto;
   margin-top: 60px;
   /* padding-top: 60px; */
+
+
   
 }
 
