@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./PostCard.css";
-import fitty from "fitty";
+
 
 
 const PostCard = ({postData}) => {

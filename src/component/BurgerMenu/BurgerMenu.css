@@ -17,48 +17,62 @@
 }
 
 .burger-menu.show {
-  display: unset;
+  display: flex;
   /* transform: scale(1.1); */
+
+  flex-direction: column;
+  list-style: none;
+  align-items: flex-start;
+  font-weight: 900;
 }
 
 .burger-menu hr {
   margin: auto;
 }
 
-.burger-menu ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  align-items: flex-start;
-  font-weight: 900;
-  
-  
-}
-
-.burger-menu li {
-  display: flex;
-  /* justify-content: flex-end; */
-  flex-grow: 1;
-  /* max-height: 150px; */
-  padding-left: 100px;
-  
-}
-
 .burger-menu a {
-  border-width: 1px;
-  box-shadow: 10px;
-  
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
+  padding-left: 90px;
   align-items: center;
-  justify-content: center;
+  
+  border-width: 1px;
+  width: 100%;
 }
 
 .burger-menu a:hover {
   /* background-color: #2e2e2e; */
   /* color: #a0e4ff; */
-  background-color: #F8F9FA;
+  background-color: #F8F9FA; 
+}
+
+/* .burger-menu a .gg-shopping-cart {
+  margin-right: 20px;
+  --ggs:1.6;
+  margin-bottom: 7.5px;
+  
+}
+
+.burger-menu a .gg-copy {
+  --ggs:1.6;
+  margin-right: 25px;
+  margin-left: 3px;
+} */
+
+
+
+.burger-menu a span:last-child {
+  margin-left: 20px;
+}
+
+.burger-menu a span span {
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding-bottom: 3px;
+  
+}
+
+.burger-menu a .gg-copy {
   
 }
 

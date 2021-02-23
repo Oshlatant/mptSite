@@ -14,16 +14,23 @@ const BurgerMenu = function({className, onClick}) {
 
   return (
     <nav className={className ? `burger-menu ${className}` : "burger-menu"} onClick={onClick}>
-      <ul>
         <hr></hr>
-        <li><Link to="/shop">{titleList[0]}</Link></li>
+        <Link to="/shop">
+          <span className="gg-shopping-cart"></span><span><span>{titleList[0]}</span></span>
+        </Link>
         <hr></hr>
-        <li><Link to="/blog">{titleList[1]}</Link></li>
+        <Link to="/blog">
+          <span className="gg-copy"></span><span><span>{titleList[1]}</span></span>
+        </Link>
         <hr></hr>
-        <li><Link to="/contact">{titleList[2]}</Link></li>
+        <Link to="/contact">
+          <span className="gg-cloud"></span><span><span>{titleList[2]}</span></span>
+        </Link>
         <hr></hr>
-        <li><Link to="/donate">{titleList[3]}</Link></li>
-      </ul>
+        <Link to="/donate">
+          <span className="gg-cloud"></span><span><span>{titleList[3]}</span></span>
+        </Link>
+        
     </nav>
   );
 }
